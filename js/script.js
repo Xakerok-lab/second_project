@@ -11,15 +11,6 @@ function start() {
 }
 start();
 
-
-
-
-
-
-
-
-
-
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -28,28 +19,27 @@ const personalMovieDB = {
     privat: false
 };
 
-function showMyDB (){
-if (personalMovieDB.privat === false){
-    console.log(personalMovieDB);
-}
-
+function showMyDB() {
+    if (personalMovieDB.privat === false) {
+        console.log(personalMovieDB);
+    }
 
 
 }
 
 
 function writleYourGenres() {
-    
+
 
     for (let i = 1; i <= 3; i++) {
         let qwest = prompt(`Ваш любимый жанр под номером ${i}`);
-        personalMovieDB.genres[i -1] = qwest;
-       
+        personalMovieDB.genres[i - 1] = qwest;
+
 
     }
 }
 
-writleYourGenres ();
+writleYourGenres();
 
 
 
